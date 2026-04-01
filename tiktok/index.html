@@ -1718,7 +1718,7 @@
           "confirmation-fee-amount",
         );
         if (feeAmountElement) {
-          feeAmountElement.innerHTML = `C$ C${formattedPrice} <span class="confirmation-reembolso-badge">REFUNDABLE AMOUNT</span>`;
+          feeAmountElement.innerHTML = `C$${formattedPrice} <span class="confirmation-reembolso-badge">REFUNDABLE AMOUNT</span>`;
         }
 
         // Atualiza o valor no texto de descrição
@@ -1726,7 +1726,7 @@
           "confirmation-fee-value",
         );
         if (feeValueElement) {
-          feeValueElement.textContent = `C$C${formattedPrice}`;
+          feeValueElement.textContent = `C$${formattedPrice}`;
         }
 
         // Atualiza o valor no processo de liberação
@@ -1734,7 +1734,7 @@
           "confirmation-requirement-fee",
         );
         if (requirementFeeElement) {
-          requirementFeeElement.textContent = `C$ C${formattedPrice} for identity verification`;
+          requirementFeeElement.textContent = `C$${formattedPrice} for identity verification`;
         }
 
         // Atualiza o valor na mensagem de sucesso
@@ -1742,7 +1742,7 @@
           "confirmation-success-value",
         );
         if (successValueElement) {
-          successValueElement.textContent = `C$ C${formattedPrice}`;
+          successValueElement.textContent = `C$${formattedPrice}`;
         }
       });
 
